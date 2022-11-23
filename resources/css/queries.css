@@ -1,0 +1,121 @@
+/*--Big tablets to 1200px (widths smaller than 1200px)--*/
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%; /*1rem = 9px; 9/16 = 56.25%*/
+  }
+  body {
+    font-size: 1.4rem;
+  }
+  .modal {
+    width: 80vw;
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 1171px) {
+  .project-content-solid {
+    right: 9rem;
+    top: -1rem;
+  }
+}
+/*--Small tablets to big tablets: from 768px to 1023px--*/
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (max-width: 920px) {
+  .project-heading {
+    width: 100%;
+  }
+  .project-content-image {
+    height: 34rem;
+  }
+  #project-content-image-two {
+    left: 30%;
+  }
+  .project-heading {
+    font-size: 5rem;
+  }
+  .modal {
+    height: 85vh;
+  }
+}
+@media only screen and (max-width: 887px) {
+}
+/*--Small Phones to small tablets: from 481px to 767px--*/
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%; /*1rem = 8px; 8/16 = 50%*/
+  }
+  body {
+    font-size: 1.5rem;
+  }
+  /* potrait layout */
+  .project-content {
+    flex-direction: column;
+  }
+  .project-content-text {
+    padding: 5rem; /* same as nav*/
+    order: 1;
+  }
+  .project-content-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+    align-items: center;
+    margin-top: -5rem;
+  }
+  .project-desc {
+    width: 100%;
+  }
+
+  .project-links {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+  }
+  .project-link {
+    align-items: flex-start;
+  }
+
+  .project-link:hover .project-link-line {
+    width: 15rem;
+  }
+
+  #project-content-image-two {
+    left: 10%;
+  }
+}
+
+/*--Small Phones: from 0px to 480px--*/
+
+@media only screen and (max-width: 480px) {
+  .prev-text {
+    display: none;
+  }
+  .next-text {
+    display: none;
+  }
+  .cta {
+    padding: 1.5rem 3rem;
+  }
+  .project-link:hover .project-link-line {
+    width: 14rem;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+  .project-content-image {
+    height: 30rem;
+  }
+  #project-content-image-two {
+    left: 5%;
+  }
+}

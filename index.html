@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Focuses on work done by Kailash Yadav and a way to contact him"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, web, kailash, yadav, "
+    />
+    <meta name="author" content="Kailash Yadav" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="vendors/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="vendors/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="vendors/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="vendors/favicon/site.webmanifest" />
+
+    <!-- vendors css  -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Own css  -->
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+
+    <!-- vendor js  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- own js  -->
+    <script defer src="resources/js/script.js"></script>
+
+    <title>Kailash | Exploring</title>
+  </head>
+  <body>
+    <h1 style="display: none">Projects of Kailash Yadav</h1>
+    <!-- Navigation  -->
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li>
+          <a href="#contact-me" class="cta cta-primary" id="contactMeBtn">
+            Contact Me
+          </a>
+        </li>
+        <li>
+          <a href="#about-me" class="cta cta-secondary" id="aboutUsBtn">
+            About me
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Contact Us  -->
+    <div class="side-content hideSlide" id="contact-me">
+      <h2 style="display: none">Contact me</h2>
+      <ion-icon name="add-outline" class="cross" id="contactmeCross"></ion-icon>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        class="submit-form"
+      >
+        <label for="input-field">Name*</label>
+        <input
+          type="text"
+          class="submit-field"
+          id="input-field"
+          name="name"
+          required
+          autocomplete="off"
+        />
+        <label for="email-field">Email*</label>
+        <input
+          type="text"
+          class="submit-field"
+          id="email-field"
+          name="email"
+          required
+          autocomplete="off"
+        />
+        <label for="message-field">Message*</label>
+        <textarea
+          rows="11"
+          class="submit-field"
+          id="message-field"
+          name="message"
+          required
+          autocomplete="off"
+        ></textarea>
+        <button type="submit" class="cta cta-primary" id="submit-btn">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <!-- ABout me  -->
+    <div class="side-content hideSlide" id="about-me">
+      <h2 style="display: none">About me</h2>
+      <ion-icon name="add-outline" class="cross" id="aboutUsCross"></ion-icon>
+      <div class="about-me-section" id="about-me-info">
+        <div class="profile-pic"></div>
+        <!-- <img src="resources/img/profile-front.jpg" class="profile-pic" /> -->
+        <h3>Kailash Yadav</h3>
+        <p>
+          I have no clue what I am doing, so right now trying things that seem
+          interesting. Making this page seemed fun so I tried to make one-page
+          portfolio that must have all the things I want to share using pure
+          HTML, CSS and vanilla JS. I am also explorign what could be done by
+          Deep Learning, Animation, Automation, Web Development and more. Let's
+          see where life takes me.
+        </p>
+        <p>
+          Here, I have included only projects that had my utmost priority and
+          most fun. Some of the projects may still be unfinished. Stay tuned for
+          updates.
+        </p>
+      </div>
+
+      <div id="about-me-skills" class="about-me-section">
+        <h3>Tools Used</h3>
+        <ul>
+          <li class="each-skill">
+            <div class="skill-heading">Django, Postgresql</div>
+            <div class="progress-bar">
+              <div class="progress-bar-value" id="progress-django"></div>
+            </div>
+          </li>
+          <li class="each-skill">
+            <div class="skill-heading">Python</div>
+            <div class="progress-bar">
+              <div class="progress-bar-value" id="progress-python"></div>
+            </div>
+          </li>
+          <li class="each-skill">
+            <div class="skill-heading">HTML,CSS,JS</div>
+            <div class="progress-bar">
+              <div class="progress-bar-value" id="progress-web"></div>
+            </div>
+          </li>
+          <li class="each-skill">
+            <div class="skill-heading">Nodejs</div>
+            <div class="progress-bar">
+              <div class="progress-bar-value" id="progress-node"></div>
+            </div>
+          </li>
+          <li class="each-skill">
+            <div class="skill-heading">Mapbpx API</div>
+            <div class="progress-bar">
+              <div class="progress-bar-value" id="progress-mapbox"></div>
+            </div>
+          </li>
+          <li class="each-skill">
+            <div class="skill-heading">Google Apps SCript</div>
+            <div class="progress-bar">
+              <div class="progress-bar-value" id="progress-script"></div>
+            </div>
+          </li>
+          <li class="each-skill">
+            <div class="skill-heading">Git</div>
+            <div class="progress-bar">
+              <div class="progress-bar-value" id="progress-git"></div>
+            </div>
+          </li>
+          <li class="each-skill">
+            <div class="skill-heading">Blender</div>
+            <div class="progress-bar">
+              <div class="progress-bar-value" id="progress-blender"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="about-me-section" id="about-me-copyright">
+        <p>GNU GENERAL PUBLIC LICENSE</p>
+        <!-- <p>Version 3, 29 June 2007</p>
+        <p>
+          Copyright (C) 2007 Free Software Foundation, Inc. https://fsf.org/
+          Everyone is permitted to copy and distribute verbatim copies of this
+          license document, but changing it is not allowed.
+        </p> -->
+      </div>
+    </div>
+    <div class="container">
+      <!-- add photo missing default photo -->
+      <!-- make modal height accroding to content  -->
+      <!-- =================================================== -->
+      <!-- ===================== Projects ===================== -->
+      <!-- =================================================== -->
+      <!-- each project has numbering(id and data-project) in section, prev and next links, each project link, each modal boxes ; also destination links of project-links   -->
+      <!-- ======================================================= PROJECT 1 =======================================================================  -->
+      <!-- ====  -->
+      <!-- ====  -->
+      <section id="project-1" class="project" data-project="1">
+        <!-- =========== Modal Boxes ========== -->
+        <!-- <div
+        class="modal hideZoom"
+        id="viewProject-1"
+        data-project="1"
+        data-destination="viewProject"
+      >
+        <ion-icon name="add-outline" class="cross"></ion-icon>
+        <ul class="modal-list">
+          <li class="modal-item">View Project 1</li>
+        </ul>
+      </div> -->
+        <div
+          class="modal hideZoom"
+          id="whatIDid-1"
+          data-project="1"
+          data-destination="whatIDid"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">
+              The Activities were done while working with Srijan Sthapit.
+            </li>
+            <li class="modal-item">
+              Developed completely bilingual(English and Nepali) website
+            </li>
+            <li class="modal-item">
+              Created system to handle data coming from multiple
+              sources(volunteers, consolidated data from Political Parties, and
+              data available in Internet)
+            </li>
+            <li class="modal-item">
+              Suggestions, Search Engine, filter functionality and another
+              functionalities
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="modal hideZoom"
+          id="skillsUsed-1"
+          data-project="1"
+          data-destination="skillsUsed"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">Django</li>
+            <li class="modal-item">Postgresql</li>
+            <li class="modal-item">HTML, CSS, JS</li>
+          </ul>
+        </div>
+        <div
+          class="modal hideZoom"
+          id="articles-1"
+          data-project="1"
+          data-destination="articles"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">
+              <a
+                href="https://myrepublica.nagariknetwork.com/news/mero-pratinidhi-released-to-deliver-election-information-to-public/"
+              >
+                <img src="resources/img/logos/republica.png" />
+              </a>
+            </li>
+            <li class="modal-item">
+              <a
+                href="https://nagariknews.nagariknetwork.com/technology/998191-1668583420.html"
+              >
+                <img src="resources/img/logos/nagarik.png" />
+              </a>
+            </li>
+            <li class="modal-item">
+              <a href="https://www.khabarmanch.com/ajayyadavandteam/">
+                <img src="resources/img/logos/sabar.png" />
+              </a>
+            </li>
+            <li class="modal-item">
+              <a href="https://mechitimesonline.com/?p=1299">
+                <img src="resources/img/logos/mechi.png" />
+              </a>
+            </li>
+            <li class="modal-item">
+              <a href="http://jhapaonline.com/2022/11/17/electionportal/">
+                <img src="resources/img/logos/jhapa.png" />
+              </a>
+            </li>
+            <li class="modal-item">
+              <a href="https://kanakaikhabar.com/?p=8601">
+                <img src="resources/img/logos/kalanki.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ======= End Modal Boxes ========= -->
+        <!-- chnage prev href and prev-text in js -->
+
+        <div class="project-container">
+          <div class="row project-content">
+            <div class="project-content-images">
+              <img
+                src="resources/img/img-1-one.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-one"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+              <img
+                src="resources/img/img-1-two.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-two"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+            </div>
+            <div class="project-content-text scrollHidden">
+              <div class="project-content-text-up">
+                <h2 class="project-heading">
+                  <div>Mero</div>
+                  <div>Pratinidhi</div>
+                </h2>
+                <div class="project-content-solid"></div>
+
+                <p class="project-desc">
+                  Tech Head and Core Member of this never done before initiative
+                  in Nepal that aims to bring ease among voters in finding
+                  information on all election candidates. Currently we have data
+                  on over 5000 candidates which was done by liaising with top
+                  politicians and mobilizing 90+ volunteers in 19 districts of
+                  Nepal.
+                </p>
+                <div class="project-number">01</div>
+              </div>
+
+              <ul class="project-links">
+                <li>
+                  <a
+                    href="https://meropratinidhi.com/"
+                    class="project-link viewProjectBtn"
+                    data-project="1"
+                    data-target="viewProject"
+                    target="_blank"
+                  >
+                    View Project
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#project-1"
+                    class="project-link whatIDidBtn"
+                    data-project="1"
+                    data-target="whatIDid"
+                  >
+                    What i did?
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#project-1"
+                    class="project-link skillsUsedBtn"
+                    data-project="1"
+                    data-target="skillsUsed"
+                  >
+                    Skills used
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#project-1"
+                    class="project-link articlesBtn"
+                    data-project="1"
+                    data-target="articles"
+                  >
+                    Articles Featuring This
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="watermark">Election '79</div>
+        </div>
+        <!-- chnage next  href and prev-text  in js -->
+        <a href="#project-2" class="change-project next" data-project="1">
+          <span class="next-text">02</span>
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </a>
+      </section>
+
+      <!-- ======================================================= PROJECT 2 =======================================================================  -->
+      <!-- ====  -->
+      <!-- ====  -->
+      <section id="project-2" class="project" data-project="2">
+        <!-- =========== Modal Boxes ========== -->
+        <div
+          class="modal hideZoom"
+          id="viewProject-2"
+          data-project="2"
+          data-destination="viewProject"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">View Project 2</li>
+          </ul>
+        </div>
+        <!-- <div
+        class="modal hideZoom"
+        id="whatIDid-2"
+        data-project="2"
+        data-destination="whatIDid"
+      >
+        <ion-icon name="add-outline" class="cross"></ion-icon>
+        <ul class="modal-list">
+          <li class="modal-item"></li>
+        </ul>
+      </div> -->
+
+        <div
+          class="modal hideZoom"
+          id="skillsUsed-2"
+          data-project="2"
+          data-destination="skillsUsed"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">Google Apps Script</li>
+          </ul>
+        </div>
+        <!-- <div
+        class="modal hideZoom"
+        id="articles-2"
+        data-project="2"
+        data-destination="articles"
+      >
+        <ion-icon name="add-outline" class="cross"></ion-icon>
+        <ul class="modal-list">
+          <li class="modal-item">Articles 2</li>
+        </ul>
+      </div> -->
+
+        <!-- ======= End Modal Boxes ========= -->
+        <!-- chnage prev href and prev-text in js -->
+        <a href="#project-1" class="change-project prev" data-project="2">
+          <span class="prev-text">01</span>
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+        <div class="project-container">
+          <div class="row project-content">
+            <div class="project-content-images">
+              <img
+                src="resources/img/img-2-one.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-one"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+              <img
+                src="resources/img/img-2-two.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-two"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+            </div>
+            <div class="project-content-text scrollHidden">
+              <div class="project-content-text-up">
+                <h2 class="project-heading">
+                  <div>Documents</div>
+                  <div>Creation</div>
+                </h2>
+                <div class="project-content-solid"></div>
+
+                <div class="project-desc">
+                  <p>
+                    During my internship at the Counseling Department of
+                    <b>Trinity International College, Nepal</b>, I and my fellow
+                    intern created a sustem in which a form can be filled with
+                    details like Name, Date of Birth, Gender, etc. and
+                    documents(proof of mode of instruction, proof they studied
+                    in this college, wtc.) requred by the students will be
+                    produced accordingly.
+                  </p>
+                  <p>
+                    This reduced lots of errors that happened when individual
+                    documents were changed manually by opening the doc files and
+                    changing everything manually for each student.
+                  </p>
+                </div>
+                <div class="project-number">02</div>
+              </div>
+
+              <ul class="project-links">
+                <li>
+                  <a
+                    href="#project-2"
+                    class="project-link viewProjectBtn"
+                    data-project="2"
+                  >
+                    <!-- data-target="viewProject" -->
+                    Property of Trinity; <del>View</del>
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+                <!-- <li>
+                <a
+                  href="#project-2"
+                  class="project-link whatIDidBtn"
+                  data-project="2"
+                  data-target="whatIDid"
+                >
+                  What i did?
+                  <div class="project-link-line"></div>
+                </a>
+              </li> -->
+                <li>
+                  <a
+                    href="#project-2"
+                    class="project-link skillsUsedBtn"
+                    data-project="2"
+                    data-target="skillsUsed"
+                  >
+                    Skills used
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+
+                <!-- <li>
+                <a
+                  href="#project-2"
+                  class="project-link articlesBtn"
+                  data-project="2"
+                  data-target="articles"
+                >
+                  Articles Featuring This
+                  <div class="project-link-line"></div>
+                </a>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="watermark">Automation</div>
+        </div>
+        <!-- chnage next  href and prev-text  in js -->
+        <a href="#project-3" class="change-project next" data-project="2">
+          <span class="next-text">03</span>
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </a>
+      </section>
+
+      <!-- ======================================================= PROJECT 3 =======================================================================  -->
+      <!-- ====  -->
+      <!-- ====  -->
+      <section id="project-3" class="project" data-project="3">
+        <!-- =========== Modal Boxes ========== -->
+        <!-- <div
+        class="modal hideZoom"
+        id="viewProject-3"
+        data-project="3"
+        data-destination="viewProject"
+      >
+        <ion-icon name="add-outline" class="cross"></ion-icon>
+        <ul class="modal-list">
+          <li class="modal-item">View Project 3</li>
+        </ul>
+      </div> -->
+        <div
+          class="modal hideZoom"
+          id="whatIDid-3"
+          data-project="3"
+          data-destination="whatIDid"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">Worked on the backend</li>
+            <li class="modal-item">
+              Tried to automate tracing of route but failed(figured out the
+              solution later)
+            </li>
+            <li class="modal-item">Managed dababase and data manipulation</li>
+          </ul>
+        </div>
+
+        <div
+          class="modal hideZoom"
+          id="skillsUsed-3"
+          data-project="3"
+          data-destination="skillsUsed"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">Nodejs</li>
+            <li class="modal-item">Mapbox API</li>
+          </ul>
+        </div>
+        <div
+          class="modal hideZoom"
+          id="articles-3"
+          data-project="3"
+          data-destination="articles"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">Articles 3</li>
+          </ul>
+        </div>
+
+        <!-- ======= End Modal Boxes ========= -->
+        <!-- chnage prev href and prev-text in js -->
+        <a href="#project-2" class="change-project prev" data-project="3">
+          <span class="prev-text">02</span>
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+        <div class="project-container">
+          <div class="row project-content">
+            <div class="project-content-images">
+              <img
+                src="resources/img/img-3-one.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-one"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+              <img
+                src="resources/img/img-3-two.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-two"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+            </div>
+            <div class="project-content-text scrollHidden">
+              <div class="project-content-text-up">
+                <h2 class="project-heading">
+                  <div>Path</div>
+                  <div>pradasak</div>
+                </h2>
+                <div class="project-content-solid"></div>
+
+                <p class="project-desc">
+                  In a group of 4, computer science team of
+                  <b>Student Research Council Nepal</b>, developed a website
+                  that shows public transportation routes of Kathmandu Valley.
+                  It was really hard to find digital information related to the
+                  routes taken by public vehicles, so many don't like to choose
+                  this cheapest option. Hence, we wanted to solved that issue.
+                </p>
+                <div class="project-number">03</div>
+              </div>
+
+              <ul class="project-links">
+                <li>
+                  <a
+                    href="https://pathpradarshak456.herokuapp.com/"
+                    class="project-link viewProjectBtn"
+                    data-project="3"
+                    target="_blank"
+                  >
+                    <!-- data-target="viewProject" -->
+                    View Project
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#project-3"
+                    class="project-link whatIDidBtn"
+                    data-project="3"
+                    data-target="whatIDid"
+                  >
+                    What i did?
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#project-3"
+                    class="project-link skillsUsedBtn"
+                    data-project="3"
+                    data-target="skillsUsed"
+                  >
+                    Skills used
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+
+                <!-- <li>
+                <a
+                  href="#project-3"
+                  class="project-link articlesBtn"
+                  data-project="3"
+                  data-target="articles"
+                >
+                  Articles Featuring This
+                  <div class="project-link-line"></div>
+                </a>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="watermark">Bus Routes</div>
+        </div>
+        <!-- chnage next  href and prev-text  in js -->
+        <a href="#project-4" class="change-project next" data-project="3">
+          <span class="next-text">04</span>
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </a>
+      </section>
+
+      <!-- ======================================================= PROJECT 4 =======================================================================  -->
+      <!-- ====  -->
+      <!-- ====  -->
+      <section id="project-4" class="project" data-project="4">
+        <!-- =========== Modal Boxes ========== -->
+        <div
+          class="modal hideZoom"
+          id="viewProject-4"
+          data-project="4"
+          data-destination="viewProject"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">View Project 4</li>
+          </ul>
+        </div>
+        <div
+          class="modal hideZoom"
+          id="whatIDid-4"
+          data-project="4"
+          data-destination="whatIDid"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">What I did 4</li>
+          </ul>
+        </div>
+
+        <div
+          class="modal hideZoom"
+          id="skillsUsed-4"
+          data-project="4"
+          data-destination="skillsUsed"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">Blender</li>
+          </ul>
+        </div>
+        <div
+          class="modal hideZoom"
+          id="articles-4"
+          data-project="4"
+          data-destination="articles"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">Articles 4</li>
+          </ul>
+        </div>
+
+        <!-- ======= End Modal Boxes ========= -->
+        <!-- chnage prev href and prev-text in js -->
+        <a href="#project-3" class="change-project prev" data-project="4">
+          <span class="prev-text">03</span>
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+        <div class="project-container">
+          <div class="row project-content">
+            <div class="project-content-images">
+              <img
+                src="resources/img/img-4-one.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-one"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+              <img
+                src="resources/img/img-4-two.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-two"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+            </div>
+            <div class="project-content-text scrollHidden">
+              <div class="project-content-text-up">
+                <h2 class="project-heading">
+                  <div>Doughnut</div>
+                  <div>Animation</div>
+                </h2>
+                <div class="project-content-solid"></div>
+
+                <p class="project-desc">
+                  Well I wanted to start doing animation because why not. This
+                  is just what I created while learning from the
+                  <b>Blender Guru's first tutorial</b>. Work in progress and
+                  will upload pictures with better rendering and lightning. I
+                  loved making that chocolate chips. Video coming up soon!
+                </p>
+                <div class="project-number">04</div>
+              </div>
+
+              <ul class="project-links">
+                <!-- <li>
+                <a
+                  href="#project-4"
+                  class="project-link viewProjectBtn"
+                  data-project="4"
+                  data-target="viewProject"
+                >
+                  View Project
+                  <div class="project-link-line"></div>
+                </a>
+              </li>
+              <li> -->
+                <!-- <a
+                  href="#project-4"
+                  class="project-link whatIDidBtn"
+                  data-project="4"
+                  data-target="whatIDid"
+                >
+                  What i did?
+                  <div class="project-link-line"></div>
+                </a>
+              </li> -->
+                <li>
+                  <a
+                    href="#project-4"
+                    class="project-link skillsUsedBtn"
+                    data-project="4"
+                    data-target="skillsUsed"
+                  >
+                    Skills used
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+
+                <!-- <li>
+                <a
+                  href="#project-4"
+                  class="project-link articlesBtn"
+                  data-project="4"
+                  data-target="articles"
+                >
+                  Articles Featuring This
+                  <div class="project-link-line"></div>
+                </a>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="watermark">Munch Munch</div>
+        </div>
+        <!-- chnage next  href and prev-text  in js -->
+        <a href="#project-5" class="change-project next" data-project="4">
+          <span class="next-text">05</span>
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </a>
+      </section>
+
+      <!-- ======================================================= PROJECT 5 =======================================================================  -->
+      <!-- ====  -->
+      <!-- ====  -->
+      <section id="project-5" class="project" data-project="5">
+        <!-- =========== Modal Boxes ========== -->
+        <div
+          class="modal hideZoom"
+          id="viewProject-5"
+          data-project="5"
+          data-destination="viewProject"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">View Project 5</li>
+          </ul>
+        </div>
+        <div
+          class="modal hideZoom"
+          id="whatIDid-5"
+          data-project="5"
+          data-destination="whatIDid"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">What I did 5</li>
+          </ul>
+        </div>
+
+        <div
+          class="modal hideZoom"
+          id="skillsUsed-5"
+          data-project="5"
+          data-destination="skillsUsed"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">Skills Used 5</li>
+          </ul>
+        </div>
+        <div
+          class="modal hideZoom"
+          id="articles-5"
+          data-project="5"
+          data-destination="articles"
+        >
+          <ion-icon name="add-outline" class="cross"></ion-icon>
+          <ul class="modal-list">
+            <li class="modal-item">Articles 5</li>
+          </ul>
+        </div>
+
+        <!-- ======= End Modal Boxes ========= -->
+        <!-- chnage prev href and prev-text in js -->
+        <a href="#project-4" class="change-project prev" data-project="5">
+          <span class="prev-text">04</span>
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+        <div class="project-container">
+          <div class="row project-content">
+            <div class="project-content-images">
+              <img
+                src="resources/img/img-5-one.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-one"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+              <img
+                src="resources/img/img-5-two.png"
+                alt="Project's Image"
+                class="project-content-image scrollHiddenLeft"
+                id="project-content-image-two"
+                onerror="this.onerror=null;this.src='resources/img/missing.png';"
+              />
+            </div>
+            <div class="project-content-text scrollHidden">
+              <div class="project-content-text-up">
+                <h2 class="project-heading">
+                  <div>Unfinished</div>
+                  <div>Deep Learning Project</div>
+                </h2>
+                <div class="project-content-solid"></div>
+
+                <p class="project-desc">
+                  I am pretty excited to reveal this one. Hopefully there will
+                  be soon something to show. If there is no progress, I will
+                  detail my process and share my experience. Stay Tuned!
+                </p>
+                <div class="project-number">05</div>
+              </div>
+
+              <ul class="project-links">
+                <li>
+                  <a class="project-link viewProjectBtn">
+                    <!-- href="#project-5"
+                data-project="5"
+                data-target="viewProject" -->
+                    <del>View Project</del>
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="project-link whatIDidBtn">
+                    <!-- href="#project-5" -->
+                    <!-- data-project="5"
+                  data-target="whatIDid" -->
+                    <del>What i did?</del>
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="project-link skillsUsedBtn">
+                    <!-- href="#project-5"
+                  data-project="5"
+                  data-target="skillsUsed" -->
+                    <del>Skills used</del>
+                    <div class="project-link-line"></div>
+                  </a>
+                </li>
+
+                <!-- <li>
+                <a
+                  href="#project-5"
+                  class="project-link articlesBtn"
+                  data-project="5"
+                  data-target="articles"
+                >
+                  <del>Articles Featuring This</del>
+                  <div class="project-link-line"></div>
+                </a>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="watermark">Generative adversarial network</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="backdrop notShownBackdrop"></div>
+
+    <!-- smooth Scroll -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        container = document.querySelector(".container");
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          animationTime = 300;
+          if (this.hash !== "") {
+            if (this.hash.split("-")[0] == "#project") {
+              // make nullify snap for smooth scrolling
+              container.style = "height:100%;";
+              // go to project right now before moving
+              currentProject = event.currentTarget.dataset.project;
+              window.location.href = `#project-${currentProject}`;
+            }
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              animationTime,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+            // make snap work again
+            setTimeout(() => {
+              container.style = "height:100vh;";
+            }, animationTime);
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>

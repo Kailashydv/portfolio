@@ -1,0 +1,150 @@
+<!-- each project has numbering(id and data-project) in section, each modal boxes, prev and next links, each project link,  ; also destination links of project-links   -->
+<!-- steps to create new project 
+1. chnage numbering of all 2 to new project number and correct h2 being chnaged
+2. change prev and next
+3.  Change Title, desc, modal content, watermark
+4. name images format img-2-(one/two) -->
+<!-- ======================================================= PROJECT 2 =======================================================================  -->
+<!-- ====  -->
+<!-- ====  -->
+<section id="project-2" class="project" data-project="2">
+  <!-- =========== Modal Boxes ========== -->
+  <div
+    class="modal hideZoom"
+    id="viewProject-2"
+    data-project="2"
+    data-destination="viewProject"
+  >
+    <ion-icon name="add-outline" class="cross"></ion-icon>
+    <ul class="modal-list">
+      <li class="modal-item">View Project 2</li>
+    </ul>
+  </div>
+  <div
+    class="modal hideZoom"
+    id="whatIDid-2"
+    data-project="2"
+    data-destination="whatIDid"
+  >
+    <ion-icon name="add-outline" class="cross"></ion-icon>
+    <ul class="modal-list">
+      <li class="modal-item">What I did 2</li>
+    </ul>
+  </div>
+
+  <div
+    class="modal hideZoom"
+    id="skillsUsed-2"
+    data-project="2"
+    data-destination="skillsUsed"
+  >
+    <ion-icon name="add-outline" class="cross"></ion-icon>
+    <ul class="modal-list">
+      <li class="modal-item">Skills Used 2</li>
+    </ul>
+  </div>
+  <div
+    class="modal hideZoom"
+    id="articles-2"
+    data-project="2"
+    data-destination="articles"
+  >
+    <ion-icon name="add-outline" class="cross"></ion-icon>
+    <ul class="modal-list">
+      <li class="modal-item">Articles 2</li>
+    </ul>
+  </div>
+
+  <!-- ======= End Modal Boxes ========= -->
+  <!-- chnage prev href and prev-text in js -->
+  <a href="#project-1" class="change-project prev" data-project="2">
+    <span class="prev-text">01</span>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+  <div class="project-container">
+    <div class="row project-content">
+      <div class="project-content-images">
+        <img
+          src="resources/img/img-2-one.png"
+          alt="Project's Image"
+          class="project-content-image scrollHiddenLeft"
+          id="project-content-image-one"
+          onerror="this.onerror=null;this.src='resources/img/missing.png';"
+        />
+        <img
+          src="resources/img/img-2-two.png"
+          alt="Project's Image"
+          class="project-content-image scrollHiddenLeft"
+          id="project-content-image-two"
+          onerror="this.onerror=null;this.src='resources/img/missing.png';"
+        />
+      </div>
+      <div class="project-content-text scrollHidden">
+        <div class="project-content-text-up">
+          <h2 class="project-heading">
+            <div>Title</div>
+            <div>Title</div>
+          </h2>
+          <div class="project-content-solid"></div>
+
+          <p class="project-desc">desc</p>
+          <div class="project-number">02</div>
+        </div>
+
+        <ul class="project-links">
+          <li>
+            <a
+              href="#project-2"
+              class="project-link viewProjectBtn"
+              data-project="2"
+              data-target="viewProject"
+            >
+              View Project
+              <div class="project-link-line"></div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#project-2"
+              class="project-link whatIDidBtn"
+              data-project="2"
+              data-target="whatIDid"
+            >
+              What i did?
+              <div class="project-link-line"></div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#project-2"
+              class="project-link skillsUsedBtn"
+              data-project="2"
+              data-target="skillsUsed"
+            >
+              Skills used
+              <div class="project-link-line"></div>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#project-2"
+              class="project-link articlesBtn"
+              data-project="2"
+              data-target="articles"
+            >
+              Articles Featuring This
+              <div class="project-link-line"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="watermark">Election '79</div>
+  </div>
+  <!-- chnage next  href and prev-text  in js -->
+  <a href="#project-3" class="change-project next" data-project="2">
+    <span class="next-text">03</span>
+    <ion-icon name="arrow-down-outline"></ion-icon>
+  </a>
+</section>
