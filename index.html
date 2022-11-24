@@ -27,6 +27,12 @@
     />
     <meta name="author" content="Kailash Yadav" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="black"
+    />
+    <meta name="color-scheme" content="dark" />
 
     <link
       rel="apple-touch-icon"
@@ -48,11 +54,16 @@
     <link rel="manifest" href="vendors/favicon/site.webmanifest" />
 
     <!-- vendors css  -->
+
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
       rel="stylesheet"
     />
     <!-- Own css  -->
@@ -142,14 +153,6 @@
         </button>
       </form>
       <div class="social-links">
-        <a
-          href="https://www.facebook.com/kailashydv/"
-          class="social-link"
-          target="_blank"
-          id="facebook"
-        >
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a>
         <a
           href="https://www.instagram.com/kailashyadav2.7/"
           class="social-link"
@@ -468,7 +471,9 @@
               </ul>
             </div>
           </div>
-          <div class="watermark">Election '79</div>
+          <div class="watermark" media="(prefers-color-scheme: dark)">
+            Election '79
+          </div>
         </div>
         <!-- chnage next  href and prev-text  in js -->
         <a href="#project-2" class="change-project next" data-project="1">
@@ -1097,7 +1102,7 @@
         // Add smooth scrolling to all links
         $("a").on("click", function (event) {
           // Make sure this.hash has a value before overriding default behavior
-          animationTime = 300;
+          animationTime = 400;
           if (this.hash !== "") {
             // if (this.hash.split("-")[0] == "#project") {
             //   // make nullify snap for smooth scrolling

@@ -6,6 +6,9 @@ Variables
   --color-background: #000;
   --color-background-lighter: #090909;
   --color-primary: #472d2d;
+  --color-primary-lighter: #4e3131;
+  --color-primary-lightest: #5c3a3a;
+  --color-primary-little-dark: #362020;
   --color-primary-dark: #291a1a;
   --color-primary-darker: #1b1313;
   --color-font-primary: #dadada;
@@ -29,16 +32,18 @@ Custom Scroll Bar
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 100vw;
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-lightest);
   border: var(--color-background) 5px solid;
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-primary);
   width: 2.1rem;
 }
-@supports (scrollbar-color: var(--color-primary) var(--color-background)) {
+@supports (
+  scrollbar-color: var(--color-primary-lightest) var(--color-background)
+) {
   * {
-    scrollbar-color: var(--color-primary) var(--color-background);
+    scrollbar-color: var(--color-primary-lightest) var(--color-background);
     scrollbar-width: auto;
   }
 }
@@ -62,11 +67,11 @@ html {
 body {
   background-color: var(--color-background);
   color: var(--color-font-primary);
-  font-family: "Roboto", sans-serif;
-  font-size: 1.35rem;
-  line-height: 1.8rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
   text-rendering: optimizeLegibility;
-  font-weight: 300;
+  font-weight: 500;
   overflow-x: hidden;
   box-sizing: border-box;
   letter-spacing: 0.15rem;
@@ -105,20 +110,23 @@ section:nth-child(even) {
   background-color: rgb(17, 17, 17);
 }
 section:nth-child(even) .watermark {
-  color: rgb(14, 14, 14);
+  opacity: 0.02;
 }
+
 ul {
   list-style: none;
 }
 /* heading*/
 
 h3 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+
   text-transform: uppercase;
-  font-weight: 300;
   text-align: center;
   font-size: 3rem;
   line-height: 86.19%;
   padding: 3.5rem;
+  font-weight: 500;
 }
 /* Buttons */
 .cta {
@@ -153,6 +161,8 @@ h3 {
 }
 
 .change-project {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+
   position: absolute;
   z-index: 2;
   font-weight: 500;
@@ -165,7 +175,7 @@ h3 {
   align-items: center;
   transition: all 0.3s ease;
   z-index: 99;
-  left: 0;
+  left: 5%;
   text-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
@@ -174,13 +184,13 @@ h3 {
   color: var(--color-primary-dark);
 }
 .prev {
-  top: 0;
+  top: 2%;
 }
 .prev:hover {
   transform: translate(0, 1rem);
 }
 .next {
-  top: 7%;
+  top: 9%;
 }
 .next:hover {
   transform: translate(0, -1rem);
@@ -209,7 +219,6 @@ Contact me
 }
 .submit-form {
   margin-top: 4rem;
-
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -218,6 +227,7 @@ Contact me
   gap: 1rem;
 }
 .submit-field {
+  color: var(--color-background);
   width: 90%;
   padding: 1rem 2rem;
   margin-bottom: 2rem;
@@ -228,6 +238,7 @@ Contact me
 }
 .submit-field:focus,
 .submit-field:focus-visible {
+  color: var(--color-background);
   outline: none;
   border: none;
   background-color: var(--color-font-primary);
@@ -242,10 +253,10 @@ Contact me
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 1.7rem;
-  width: 100%;
+  width: 90%;
 }
 .social-link {
   display: inline-block;
@@ -291,13 +302,18 @@ About me
   left: 0;
 }
 .side-content {
+  text-align: left;
   padding: 3rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 40rem;
   height: 100vh;
-  background-color: var(--color-primary);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-little-dark),
+    var(--color-primary)
+  );
   z-index: 999;
   display: flex;
   justify-content: flex-start;
@@ -373,8 +389,8 @@ About me
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .progress-bar-value {
-  background-color: var(--color-primary);
-  height: 8px;
+  background-color: var(--color-primary-lighter);
+  height: 10px;
 }
 #progress-django {
   width: 30%;
@@ -405,6 +421,7 @@ About me
 Watermark
 ************************************/
 .watermark {
+  font-family: "M PLUS Rounded 1c", sans-serif;
   z-index: 0;
   user-select: none;
   height: 100vh;
@@ -420,8 +437,9 @@ Watermark
   word-break: break-all;
   overflow-y: hidden;
   text-align: left;
-  color: var(--color-background-lighter);
+  color: var(--color-font-primary);
   transform-origin: 0 0;
+  opacity: 0.05;
 }
 
 /***********************************
@@ -432,7 +450,11 @@ Modal Boxes
   z-index: 999;
   max-width: 65vw;
   max-height: 65vh;
-  background-color: var(--color-primary);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary),
+    var(--color-primary-little-dark)
+  );
   position: absolute;
   top: 5%;
   left: 50%;
@@ -454,6 +476,8 @@ Modal Boxes
   width: 100%;
 }
 .modal-item {
+  background-color: var(--color-primary-lighter);
+
   width: 100%;
   flex-grow: 1;
   padding: 1rem 2rem;
@@ -525,6 +549,7 @@ Each Project
 }
 .project-heading,
 .project-number {
+  font-family: "M PLUS Rounded 1c", sans-serif;
   letter-spacing: 0.4rem;
   font-weight: 500;
   font-size: 4.5rem;
@@ -540,7 +565,7 @@ Each Project
 .project-desc {
   margin-top: 1.5rem;
   width: 85%;
-  text-align: justify;
+  text-align: right;
 }
 .project-number {
   margin-top: 4rem;

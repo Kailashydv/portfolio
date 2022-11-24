@@ -1,4 +1,12 @@
 (() => {
+  var isDarkReaderEnabled =
+    "querySelector" in document &&
+    !!document.querySelector("meta[name=darkreader]");
+
+  if (isDarkReaderEnabled) $("html").addClass("dark-reader");
+})();
+
+(() => {
   // animate on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
