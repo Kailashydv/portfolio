@@ -85,7 +85,7 @@
   }
 
   .project-link:hover .project-link-line {
-    width: 15rem;
+    width: 10rem;
   }
 
   #project-content-image-two {
@@ -106,7 +106,7 @@
     padding: 1.5rem 3rem;
   }
   .project-link:hover .project-link-line {
-    width: 14rem;
+    width: 10rem;
   }
 
   .project-links {
@@ -119,3 +119,16 @@
     left: 5%;
   }
 }
+
+/* Height  */
+/* @media only screen and (max-height: 900px) {
+  .modal {
+    top: 10%;
+  }
+  .hideZoom {
+    transform: translate(-50%, 0%) scale(0);
+  }
+  .showZoom {
+    transform: translate(-50%, 0%) scale(1);
+  }
+} */

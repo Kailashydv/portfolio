@@ -12,6 +12,10 @@ Variables
   --color-font-primary-dark: #aaa;
   --color-font-primary-darker: rgb(131, 131, 131);
 }
+:root {
+  color-scheme: dakr only;
+}
+
 /***********************************
 Custom Scroll Bar
 ************************************/
@@ -86,16 +90,22 @@ Reuseable Components
   position: relative;
   z-index: 2;
 }
-.container {
+/* .container {
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-}
+} */
 section {
   position: relative;
   min-height: 100vh;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   overflow-x: hidden;
+}
+section:nth-child(even) {
+  background-color: rgb(17, 17, 17);
+}
+section:nth-child(even) .watermark {
+  color: rgb(14, 14, 14);
 }
 ul {
   list-style: none;
@@ -424,7 +434,7 @@ Modal Boxes
   max-height: 65vh;
   background-color: var(--color-primary);
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px,
@@ -597,11 +607,11 @@ Animations
   transition: all 0.2s ease;
 }
 .hideZoom {
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, 0%) scale(0);
   transition: all 0.2s ease;
 }
 .showZoom {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0%) scale(1);
   transition: all 0.2s ease;
 }
 .scrollHidden {
