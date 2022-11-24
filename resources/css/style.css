@@ -13,7 +13,7 @@ Variables
   --color-font-primary-darker: rgb(131, 131, 131);
 }
 :root {
-  color-scheme: dakr only;
+  color-scheme: dark only;
 }
 
 /***********************************
@@ -180,7 +180,7 @@ h3 {
   transform: translate(0, 1rem);
 }
 .next {
-  bottom: 0;
+  top: 88vh;
 }
 .next:hover {
   transform: translate(0, -1rem);
