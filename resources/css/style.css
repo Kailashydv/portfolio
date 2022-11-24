@@ -180,7 +180,7 @@ h3 {
   transform: translate(0, 1rem);
 }
 .next {
-  top: 88vh;
+  top: 7%;
 }
 .next:hover {
   transform: translate(0, -1rem);
