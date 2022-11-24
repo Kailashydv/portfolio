@@ -1089,7 +1089,7 @@
     <div class="backdrop notShownBackdrop"></div>
 
     <!-- smooth Scroll -->
-    <!-- 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -1099,13 +1099,13 @@
           // Make sure this.hash has a value before overriding default behavior
           animationTime = 300;
           if (this.hash !== "") {
-            if (this.hash.split("-")[0] == "#project") {
-              // make nullify snap for smooth scrolling
-              container.style = "height:100%;";
-              // go to project right now before moving
-              currentProject = event.currentTarget.dataset.project;
-              window.location.href = `#project-${currentProject}`;
-            }
+            // if (this.hash.split("-")[0] == "#project") {
+            //   // make nullify snap for smooth scrolling
+            //   container.style = "height:100%;";
+            //   // go to project right now before moving
+            //   currentProject = event.currentTarget.dataset.project;
+            //   window.location.href = `#project-${currentProject}`;
+            // }
 
             // Prevent default anchor click behavior
             event.preventDefault();
@@ -1126,12 +1126,12 @@
               }
             );
             // make snap work again
-            setTimeout(() => {
-              container.style = "height:100vh;";
-            }, animationTime);
+            // setTimeout(() => {
+            //   container.style = "height:100vh;";
+            // }, animationTime);
           } // End if
         });
       });
-    </script> -->
+    </script>
   </body>
 </html>

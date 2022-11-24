@@ -272,7 +272,7 @@ Contact me
   color: #c32aa3;
 }
 #github:hover {
-  color: rgb(19, 19, 19);
+  color: var(--color-font-primary);
 }
 #linkedin:hover {
   color: #0a66c2;
